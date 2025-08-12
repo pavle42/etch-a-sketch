@@ -10,7 +10,11 @@ for (let i = 0; i < 16; i++) {
         const box = document.createElement("div");
         box.style.height = boxSize + "px";
         box.style.width = boxSize + "px";
-        box.style.border = "thin solid white";
+
+        box.addEventListener("mouseenter", () => {
+            box.style.backgroundColor = "black";
+        });
+
         row.push(box);
     }
     boxes.push(row);
