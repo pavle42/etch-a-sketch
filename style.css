@@ -1,7 +1,11 @@
 #container {
     display: flex;
     justify-content: center;
+}
+
+#container div {
     background-color: blue;
+    box-sizing: border-box;
 }
 
 body {
